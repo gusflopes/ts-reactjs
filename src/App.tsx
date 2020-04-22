@@ -5,6 +5,12 @@ import GlobalStyle from './styles/global'
 import Routes from './routes'
 
 const App: React.FC = () => (
-  <><GlobalStyle><BrowserRouter><Routes /></BrowserRouter></GlobalStyle></>)
+  <>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Routes />
+      </BrowserRouter>
+  </>
+)
 
 export default App;
